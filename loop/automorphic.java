@@ -10,7 +10,7 @@ class automorphic
 		int n = a.nextInt(); ////n=5
 		int sq=n*n;//sq=25
 		while(n > 0) {
-			
+			// automorphic
 			if (n % 10 == sq % 10)//
 			{
 				System.out.println(" Automorphic");
