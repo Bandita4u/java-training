@@ -1,0 +1,33 @@
+import java.util.*;
+class pyramid
+	{
+	public static void main(String[] args) 
+	{
+		Scanner a=new Scanner(System.in);
+		 System.out.println("enter a num");
+		int n=a.nextInt();
+		int spaces=n-1;
+		int stars=1;
+		for(int i=1;i<=n;i++){
+			for(int j=1;j<=spaces;j++){
+				System.out.print(" ");
+			}
+			for(int j=0;j<stars;j++){
+
+				if (j == 0 || j == stars - 1 || i==n)
+				{
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+				
+					
+			
+			}
+			System.out.println();
+			spaces--;
+			stars+=2;
+		}
+	}
+}
